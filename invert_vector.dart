@@ -1,6 +1,5 @@
 // Escreva um programa com dois vetores de mesmo tamanho, porém com os números em ordem inversa
 
-
 void main() {
   
   List<int> a = [1, 3, 2, 5];
