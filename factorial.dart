@@ -11,11 +11,18 @@ class Factorial {
    
    Fatorial(this.factorial);
    
-   int getFactorial() {
+  int getFactorial() {
        int fat = 1;
-       for (int i = fatorial; i > 1; i--) {
+       if(_checkFactorial()) {
+           for (int i = factorial; i > 1; i--) {
            fat *= i;
        }
-       return fat;
+        return fat;
+       }
+       return 0;
+   }
+   
+   bool _checkFactorial() {
+       return factorial > 0 ? true : false
    }
 }
